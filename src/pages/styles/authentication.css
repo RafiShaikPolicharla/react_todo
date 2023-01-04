@@ -1,0 +1,93 @@
+.App {
+    background: rgb(143, 219, 208);
+    background: linear-gradient(184deg, rgba(143, 219, 208, 1) 18%, rgba(117, 178, 184, 1) 55%, rgba(34, 148, 157, 1) 100%);
+}
+
+.Auth-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.Auth-form {
+    width: 420px;
+    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+    background: rgb(224, 231, 227);
+    background: linear-gradient(247deg, rgba(224, 231, 227, 1) 35%, rgba(168, 221, 212, 1) 61%);
+    /* background: rgb(245,222,216);
+background: linear-gradient(247deg, rgba(245,222,216,1) 40%, rgba(168,221,212,1) 61%); */
+}
+
+.Auth-form-content {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.Auth-form-title {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 28px;
+    color: rgb(34, 34, 34);
+    font-weight: 800;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+}
+
+input {
+    width: 90% !important;
+}
+
+.btn {
+    width: 90% !important;
+}
+
+.eye-password {
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.eye-password:hover {
+    scale: 1.15;
+    transition: all 0.1s ease-in-out;
+}
+
+.firebaseui-idp-list {
+    display: flex !important;
+    gap: 10px;
+    border-radius: 50px;
+}
+
+.firebaseui-idp-button {
+    padding-top: -7px !important;
+    display: flex !important;
+    align-items: center !important;
+    /* justify-content: center !important; */
+    flex-direction: column;
+    gap: 15px;
+    height: 8px !important;
+    width: 10px !important;
+    overflow: hidden !important;
+    border-radius: 10px !important;
+
+}
+
+input {
+    background-color: rgb(216, 240, 222) !important;
+}
+
+input[type="checkbox"] {
+    height: 20px !important;
+    width: 25px !important;
+}
