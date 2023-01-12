@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 # After clonning or zipping the downloaded zip file,
 first you need to type the following the command in respective directory
-###npm install
+### `npm install`
 This will install all the dependencies required for the application to run.
 In the project directory, you can run:
 
