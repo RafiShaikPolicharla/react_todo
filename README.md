@@ -3,7 +3,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
+# After clonning or zipping the downloaded zip file,
+first you need to type the following the command in respective directory
+### `npm install`
+This will install all the dependencies required for the application to run.
 In the project directory, you can run:
 
 ### `npm start`
@@ -13,6 +16,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+###USECASE
+After running application sucessfull you can login via multiple social accounts or you can sign up with your creditionals
+then add todos,mark it is completed or even you can delete or search a specific todo item.
 
 ### `npm test`
 
