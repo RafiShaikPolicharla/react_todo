@@ -3,10 +3,19 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import { auth } from "./firebase.js";
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useNavigate } from "react-router-dom";
 
 const FirebaseLoginAccounts = () => {
 
+    const navigate = useNavigate();
+    useEffect(() => {
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                navigate("/dashboard");
+            }
+        });
+    }, []);
     const uiConfig = {
         signInFlow: "popup",
         signInOptions: [

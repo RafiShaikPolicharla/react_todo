@@ -1,3 +1,6 @@
+/* @import "rsuite/dist/rsuite.css"; */
+
+
 .todo-page {
     height: 100vh;
     width: 100vw;
@@ -10,7 +13,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(106, 77, 255);
 }
 
 .todo-title {
@@ -50,9 +53,13 @@
     height: 100%;
     width: 15%;
 }
+.todo-search-btn:hover .todo-search-icon{
+    color:white
+}
+
 
 .todo-search-btn:hover {
-    background-color: rgb(241, 204, 204);
+    background-color: rgb(32, 0, 193);
     transition: all .35s ease-in-out;
     height: 100%;
     width: 15%;
@@ -61,7 +68,7 @@
 .todo-input:focus {
     border: 1px solid #E99A23;
     border-right: none;
-    background: rgb(255, 243, 228) !important;
+    background: rgb(255, 255, 255) !important;
 }
 
 .todo-profile {
@@ -129,28 +136,30 @@
     background: #fff !important;
 }
 
+
 .todo-container{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    gap:15px;
-
+    gap:30px;
 }
 
 .todo-item{
-    min-height: 200px;
-    min-width: 200px;
+    width: 180px;
     border-radius: 7px;
     padding:10px;
     font-size: 18px;
-    /* overflow: auto; */
     border : 1px solid #666;
     cursor: pointer;
     justify-content: space-between;
     position: relative;
+    white-space: normal;
+    word-break: break-word;
 }
 
 .todo-item:hover{
-    border:2px solid rgb(243, 213, 152);
+    transition: all .25s ease-in-out;
     -webkit-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.75);
     box-shadow: -1px 0px 9px 0px rgba(0,0,0,0.75);
@@ -199,9 +208,7 @@
 }
 .todo-completed-block:hover{
     background-color:black;
-    height: 32px;
-    width: 32px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .todo-completed-icon{
     align-self: center;
@@ -215,6 +222,8 @@
     position: absolute;
     bottom:8px;
     right: -8px;
+    width: 120px;
+    z-index: 3;
 }
 .todo-item-dropdown ul{
     padding: 0px;
